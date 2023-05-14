@@ -1,0 +1,277 @@
+%\documentclass[11pt,a4paper,uplatex,dvipdfmx]{ujarticle} 		% for uplatex
+\documentclass[11pt,a4j,dvipdfmx]{jarticle} 					% for platex
+\input{pieces/form00_header} % pieces
+\input{pieces/kakenhi7} % pieces
+\input{pieces/form01_header} % pieces
+\input{pieces/form02_2024_header} % pieces
+\input{pieces/hook3} % pieces
+%#Name: kiban_s
+\input{pieces/form04_jsps_headers} % pieces
+\input{pieces/form04_kiban_s_header} % pieces
+% ===== Global definitions for the Kakenhi form ======================
+%　基本情報
+%
+%------ 研究課題名  -------------------------------------------
+\newcommand{\研究課題名}{新型半導体検出器を用いた真空の解明}
+
+%----- 研究機関名と研究代表者の氏名-----------------------
+\newcommand{\研究機関名}{高エネルギー加速器研究機構}
+\newcommand{\研究代表者氏名}{中村浩二}
+\newcommand{\me}{\underline{\underline{K.~Nakamura}}} 
+%---- 研究期間の最終年度 ----------------
+\newcommand{\研究期間の最終元号年度}{10}  %令和で、半角数字のみ
+%========================================
+
+\input{pieces/inst_images} % pieces
+\input{pieces/inst_kiban_s} % pieces
+% user07_header
+% ===== my favorite packages ====================================
+% ここに、自分の使いたいパッケージを宣言して下さい。
+\usepackage{wrapfig}
+%\usepackage{amssymb}
+%\usepackage{mb}
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage{lineno}
+\usepackage{jumoline}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\setlength{\UnderlineDepth}{3pt}
+
+
+% ===== my personal definitions ==================================
+% ここに、自分のよく使う記号などを定義して下さい。
+\newcommand{\klpionn}{K_L \to \pi^0 \nu \overline{\nu}}
+\newcommand{\kppipnn}{K^+ \to \pi^+ \nu \overline{\nu}}
+\newcommand{\TODO}[1]{\textcolor{red}{#1}}
+\newcommand{\MEMO}[1]{\textcolor{blue}{#1}}
+
+% ----- 業績リスト用 -------------
+\newcommand{\paper}[6]{%
+	% paper{title}{authors}{journal}{vol}{pages}{year}
+	\item ``#1'', #2, #3 {\bf #4}, #5 (#6).			% お好みに合わせて変えてください。
+}
+
+\newcommand{\etal}{\textit{et al.\ }}
+\newcommand{\ca}[1]{*#1}	% corresponding author;   \ca{\yukawa}  みたいにして使う
+\newcommand{\invitedtalk}{招待講演}
+
+\newcommand{\yukawa}{H.~Yukawa}					% no underline
+%\newcommand{\yukawa}{\underline{\underline{H.~Yukawa}}}	% with 2 underlines
+\newcommand{\tomonaga}{S.~Tomonaga}
+
+\newcommand{\prl}{Phys.\ Rev.\ Lett.\ }		% よく使う雑誌も定義すると楽
+
+% ===== 欄外メモ ==================
+\newcommand{\memo}[1]{\marginpar{#1}}
+%\renewcommand{\memo}[1]{}	% 全てのメモを表示させないようにするには、行頭の"%"を消す
+
+\input{pieces/hook5} % pieces
+
+\begin{document}
+\input{pieces/hook7} % pieces
+%#Split: 01_purpose_plan  
+%#PieceName: p01_purpose_plan
+\input{pieces/p01_purpose_plan_00}
+\section{１　研究目的、研究方法など}
+%　　　　＜＜最大　6ページ＞＞
+
+%s02_purpose_plan_with_abstract
+%\JSPSInstructions		% <-- 留意事項。これは消すか、コメントアウトしてください。
+\noindent
+\textbf{（概要）}\\
+%begin 研究目的及び研究計画の概要空行付き ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+
+	\vspace*{10zw}	% （概要）と（本文）の間が10行程度になるよう、必要に応じて値を調整してください。	
+%end 研究目的及び研究計画の概要空行付き ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\noindent
+\rule{\linewidth}{1pt}\\
+\noindent
+\textbf{（本文）}\\
+%begin 研究目的と研究計画	＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+\noindent\colorbox[gray]{0.9}{\textbf{(1) 本研究の学術的背景、研究課題の核心をなす学術的「問い」}}\\
+\noindent\textbf{（本研究の学術的背景）}\\
+\MEMO{
+ヒッグスの発見からわかったこと、わからないこと\\
+ヒッグス粒子の発見$\to$ ヒッグス粒子が質量の起源\\
+実際に素粒子が質量を獲得するにはヒッグスが真空に凝縮する必要がある$\to$相転移の謎\\
+一次相転移を調べる$\sim$ヒッグスポテンシャルを調べる$\to$宇宙の解明\\
+}
+
+
+\noindent\textbf{（研究課題の核心をなす学術的「問い」）}\\
+\MEMO{真空の解明}
+
+\noindent\colorbox[gray]{0.9}{\textbf{(2) 本研究の目的及び学術的独創性と創造性}}\\
+\noindent\textbf{（本研究の目的）}\\
+\MEMO{
+高輝度LHC後期実験に向けた設計書の完成(物理インパクトと検出器デザイン)\\
+\TODO{LHC計画の表}\\
+\TODO{物理を説明するキャッチーな絵と検出器のどの部分を改善するかの絵}\\
+研究1 : Run 3における ヒッグスの測定・ヒッグスポテンシャルの測定\\
+研究2 : 内層に用いる時間測定型飛跡検出器\\
+研究3 : 超放射線耐性検出器を用いたルミノシティーモニター\\
+研究4 : 新型半導体検出器を導入することによる効果の検証と最適化の研究\\
+}
+
+\noindent\textbf{（学術的独創性と創造性）}\\
+\MEMO{
+%1. 我々が主導的に研究してきた現在素粒子標準理論が抱える最大の問題\\
+%2. 我々が主導的に開発してきた半導体検出器の革新的な最先端技術\\
+%本研究はこれらを線で結ぶもの。
+\TODO{かけそうでよくわからない}\\
+}
+
+
+\noindent\colorbox[gray]{0.9}{\textbf{(3) 本研究の着想に至った経緯や関連する国内外の研究動向と本研究の位置づけ}}\\
+\noindent\textbf{（本研究の着想に至った経緯）}\\
+\MEMO{
+   唯一の実験HL-LHC++\\
+  ベースに基盤研究(LGAD+CIGS)の応用 NEEDSと合う\\
+  1. 我々が主導的に検証してきた現在素粒子標準理論が抱える最大の問題\\
+  2. 我々が主導的に開発してきた半導体検出器の革新的な最先端技術\\
+  本研究はこれらを線で結ぶもの。\\
+}
+\noindent\textbf{（関連する国内外の研究動向と本研究の位置づけ）}\\
+\MEMO{
+電弱相転移の観測に関して\\
+    \hspace{1cm} \TODO{間接測定をしている人たち(?)相補的？ニュートリノとかまで広げる？}\\
+    \hspace{1cm} \TODO{波及効果？}\\
+半導体開発の国内外の状況\\
+    \hspace{1cm} 科研費を用いた既存の研究\\
+    \hspace{1cm} RD50やDRD3の協力関係とトピックの重要性\\
+    \hspace{1cm} 波及効果$\to$ g-2, EIC, COMET Lumi Mon, ILC, FCC-hh/ee\\
+    \hspace{3cm} $\mu$SR(カーボンニュートラル？), 生命イメージング、医療、産業(自動車とか)
+}
+
+\noindent\colorbox[gray]{0.9}{\textbf{(4) 本研究で何をどのようにどこまで明らかにしようとするのか}}\\
+\TODO{年表を作る}\\
+\MEMO{
+高輝度LHC後期実験に向けた設計書の完成(物理インパクトと検出器デザイン)\\
+研究1 : Run 3における ヒッグスの測定・ヒッグスポテンシャルの測定\\
+    \hspace{1cm} \TODO{(増渕さん、廣瀬君、生出君、意見をお願いします。中村も考えます)}\\
+    \hspace{1cm} 結合定数の測定(?) EFTの検証(?)\\
+    \hspace{1cm} HH$\to$bb$\gamma\gamma$\\
+    \hspace{1cm} HH$\to$bb$\tau\tau$\\
+研究2 : 内層に用いる時間測定型飛跡検出器\\
+    \hspace{1cm} \TODO{(中村が考える)}\\
+    \hspace{1cm} 放射線耐性の向上\\
+    \hspace{1cm} 高速読み出し回路の設計\\
+研究3 : 超放射線耐性検出器を用いたルミノシティーモニター\\
+    \hspace{1cm} \TODO{(外川さんお願いします。)}\\
+    \hspace{1cm} 検出効率の向上\\
+    \hspace{1cm} ASICへの積層(モノリシック型)\\
+研究4 : 新型半導体検出器を導入することによる効果の検証と最適化の研究\\
+    \hspace{1cm} \TODO{(これはみんなで考えましょう)}\\
+    \hspace{1cm} L1に高時間分解能検出器を用いることによる効果を最大にするための最適化\\
+    \hspace{1cm} 超高放射線耐性検出器を用いることによる効果を最大にするための最適化\\
+    \hspace{1cm} それらが実現したときに得られる物理感度へのインパクト\\
+}
+
+\noindent\colorbox[gray]{0.9}{\textbf{(5) 本研究の目的を達成するための準備状況}}\\
+\MEMO{
+ヒッグスの発見(増渕、中村が中心) ヒッグスのフェルミオン結合の発見(増渕、中村)　これらは国際共同実験の中で協力関係であり、競争もして達成してきた。\\
+現在のヒッグスグループを率いている(増渕、廣瀬が中心) $\to$ \TODO{具体的な話}\\
+高輝度LHC用の半導体検出器の開発(外川、中村が中心) 国際協力体制ができている。$\to$ 次世代検出器の開発でも協力できる\\
+時間分解能検出器と高放射線耐性半導体(中村、外川が中心) アメリカと日米協力科学事業、フランスと日仏協力、ジュネーブ大とのコネ(ITkをベースにSi-Ge)、 イタリアとのライバル関係、\\
+浜松ホトニクス等の国内企業との共同研究(ITkで培った信頼関係)\\
+産総研との共同研究\\
+国際協力体制、国際共同研究の中で日本が主導している検出器開発、日本の技術力\\
+\TODO{絵を描くべきか？}
+}
+
+\noindent\colorbox[gray]{0.9}{\textbf{研究代表者、研究分担者の具体的な役割}}\\
+\MEMO{
+絵
+}
+
+
+%\begin{wrapfigure}{r}{100mm}
+\begin{figure}[h]
+\vspace{0cm}
+ \begin{center}
+  \includegraphics[width=\textwidth]{./figs/taisei.pdf}
+  \vspace{-1.5cm}
+  \caption{研究代表者、分担者の役割\label{fig:taisei}}
+\vspace{3cm}
+ \end{center}
+%\end{wrapfigure}
+\end{figure}
+
+
+\begin{thebibliography}{99}
+\bibitem{lgadnim} {\bf Optimization of capacitive coupled Low Gain Avalanche Diode (AC-LGAD) sensors for precise time and spatial resolution}, S.~Kita, \me ~\etal  Nucl. Instrum. Methods Phys. Res., Sect. A,  Volume 1048, March 2023, 168009
+\end{thebibliography}
+%end 研究目的と研究計画	＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\input{pieces/p01_purpose_plan_01}
+
+%#Split: 02_rights  
+%#PieceName: p02_rights
+\input{pieces/p02_rights_00}
+\section{２　人権の保護及び法令等の遵守への対応}
+%　　　　＜＜最大　1ページ＞＞
+
+% s09_rights
+%begin 人権の保護及び法令等の遵守への対応 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+特になし
+%end 人権の保護及び法令等の遵守への対応 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\input{pieces/p02_rights_01}
+
+%#Split: 03_final_year  
+%#PieceName: p03_final_year
+\input{pieces/p03_final_year_00}
+\section{３　研究計画最終年度前年度応募を行う場合の記述事項}
+%　　　　＜＜最大　1ページ＞＞
+
+%s04_prep_finalyear
+% 2020-08-16: Taku: Adjusted the horizontal position of the tabular.
+%begin 最終年度の研究課題　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+\newcommand{\最終年度研究種目名}{}
+\newcommand{\最終年度研究課題番号}{}
+\newcommand{\最終年度研究課題名}{}
+\newcommand{\最終年度研究期間}{令和\ \ 年度〜令和\一年目 年度}
+%end 最終年度の研究課題　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+\input{pieces/p03_final_year_01}
+
+\noindent
+\textbf{当初研究計画及び研究成果}\\
+%begin 研究計画最終年度の応募の計画と成果 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+%	研究課題の通り、シロナガスクジラの卵は見つけられなかった。
+\vspace{5cm}
+%end 研究計画最終年度の応募の計画と成果 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+\\
+
+\noindent
+\textbf{前年度応募する理由}\\
+%begin 研究計画最終年度の応募の理由 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+%	さっさと次の研究に移りたいので。
+%end 研究計画最終年度の応募の理由 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\input{pieces/p03_final_year_02}
+
+%#Split: members_info % keep
+
+% 研究代表者の調書 (not 長所)　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+\KLInput{daihyo_info}
+
+% 研究分担者の調書　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+%\KLInput{buntansha_info}
+
+% 研究分担者を追加する場合は、buntansha_info.tex を複製して別の名前にし、
+% この下に追加してください。
+% \input ではなく、\KLInput を用いると、読み込んだファイルの中で定義した
+% マクロはそのファイルの中でのみ有効となり、他のファイルでの定義と干渉しません。
+\KLInput{togawa_info}
+\KLInput{masubuchi_info}
+\KLInput{hirose_info}
+%\KLInput{saburo_info}
+
+
+%#Split: 99_tail
+\input{pieces/hook9} % pieces
+\end{document}
+
